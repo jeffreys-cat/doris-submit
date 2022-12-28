@@ -115,9 +115,6 @@ a {
   }
 }
 
-/**
- * 全局样式 global.css
- */
 .flex-row {
   display: flex;
   flex-direction: row;
