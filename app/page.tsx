@@ -8,7 +8,7 @@ import styles from './page.module.css';
 
 ("use strict");
 
-export function App(props: any) {
+function App(props: any) {
   return (
     <div className={styles.mod}>
       <div className={styles.group}>
