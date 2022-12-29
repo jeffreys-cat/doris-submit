@@ -1,7 +1,7 @@
 // use client;
-import Image from 'next/image';
-import React, { memo, useEffect, useState } from 'react';
-import styles from './page.module.css';
+import Image from "next/image";
+import React, { memo, useEffect, useState } from "react";
+import styles from "./page.module.css";
 // import { Inter } from '@next/font/google';
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -34,11 +34,21 @@ function App(props: any) {
               <img className={styles.logo} src={"../images/img_3.png"} />
             </div>
             <div className={styles.wrapper_1}>
-              <span className={styles.tag}>峰会介绍</span>
-              <span className={styles.label}>峰会议程</span>
-              <span className={styles.word}>评审委员会</span>
-              <span className={styles.tag_1}>合作伙伴</span>
-              <span className={styles.label_1}>相关资料</span>
+              <span className={styles.tag}>
+                <a href="#Introduction">峰会介绍</a>
+              </span>
+              <span className={styles.label}>
+                <a href="#Agenda">峰会议程</a>
+              </span>
+              <span className={styles.word}>
+                <a href="#Comittee">评审委员会</a>
+              </span>
+              <span className={styles.tag_1}>
+                <a href="#Partner">合作伙伴</a>
+              </span>
+              <span className={styles.label_1}>
+                <a href="#Downoad">相关资料</a>
+              </span>
             </div>
           </div>
           <img className={styles.icon_circle_2} src={"../images/img_4.png"} />
@@ -47,8 +57,8 @@ function App(props: any) {
           <img className={styles.text_background} src={"../images/img_5.png"} />
           <span className={styles.num}>2022</span>
         </div>
-        <span className={styles.select_future}>Select Future</span>
-        <span className={styles.from_doris}>From Doris</span>
+        <span className={styles.select_future}>SELECT FUTURE</span>
+        <span className={styles.from_doris}>FROM DORIS</span>
         <div className={styles.submain}>
           <div className={styles.icon_text_wrapper}>
             <img className={styles.icon_text} src={"../images/img_6.png"} />
@@ -58,18 +68,20 @@ function App(props: any) {
         <div className={styles.button}>
           <span className={styles.caption}>前往观看</span>
         </div>
-        <span className={styles.introduction}># Introduction</span>
+        <span className={styles.introduction} id="Introduction">
+          # Introduction
+        </span>
         <div className={styles.row_1}>
           <div className={styles.container_1}>
             <span className={styles.summary}>
-              Doris Summit是由Apache软件基金会官方授权的Apache
-              Doris社区技术大会，由Apache Doris社区联合众多社区力量联合举办。
+              DORIS SUMMIT 是由 APACHE 软件基金会官方授权的 APACHE DORIS
+              社区技术大会，由 APACHE DORIS 社区联合众多社区力量联合举办。
             </span>
             <span className={styles.article}>
               大会聚集了社区众多贡献者、开发者、企业用户、国内外-
-              -线厂商以及数据上下游社区，旨在同步最新技术动态和未来开发计划、分享行业内围绕Apache
-              Doris生态的生产实践案例以及解决方案，是Apache
-              Doris开发者和使用者不可错过的盛会。
+              -线厂商以及数据上下游社区，旨在同步最新技术动态和未来开发计划、分享行业内围绕
+              APACHE DORIS 生态的生产实践案例以及解决方案，是 APACHE DORIS
+              开发者和使用者不可错过的盛会。
             </span>
           </div>
           <div className={styles.container_2}>
@@ -85,7 +97,9 @@ function App(props: any) {
             <img className={styles.button_bg} src={"../images/img_10.png"} />
           </div>
         </div>
-        <span className={styles.agenda}># Agenda</span>
+        <span className={styles.agenda} id="Agenda">
+          # Agenda
+        </span>
         <div className={styles.main}>
           <div className={styles.container_3}>
             <img
@@ -113,6 +127,12 @@ function App(props: any) {
         <img className={styles.long_bg_item_0_1} src={"../images/img_21.png"} />
         <img className={styles.long_bg_item_1_1} src={"../images/img_22.png"} />
         <img className={styles.long_bg_item_2_1} src={"../images/img_23.png"} />
+        <div className={styles.bg99}>
+          <img
+            className={styles.long_bg_item_99}
+            src={"../images/img_99.png"}
+          />
+        </div>
         <img className={styles.long_bg_item_3_1} src={"../images/img_24.png"} />
         <img className={styles.long_bg_item_4} src={"../images/img_25.png"} />
         <img className={styles.long_bg_item_5} src={"../images/img_26.png"} />
@@ -160,7 +180,9 @@ function App(props: any) {
         <img className={styles.atmosphere_3} src={"../images/img_48.png"} />
         <img className={styles.floor_bg_2} src={"../images/img_49.png"} />
         <img className={styles.long_bg_3} src={"../images/img_50.png"} />
-        <span className={styles.program_comittee}># Program Comittee</span>
+        <span className={styles.program_comittee} id="Comittee">
+          # Program Comittee
+        </span>
         <div className={styles.row_4_item_0}>
           <div className={styles.container_5}>
             <img
@@ -194,7 +216,9 @@ function App(props: any) {
           <img className={styles.entry_pic} src={"../images/img_63.png"} />
           <img className={styles.entry_pic_1} src={"../images/img_64.png"} />
         </div>
-        <span className={styles.partner}># Partner</span>
+        <span className={styles.partner} id="Partner">
+          # Partner
+        </span>
         <span className={styles.caption_3}>主办</span>
         <img className={styles.action_bg_5} src={"../images/img_65.png"} />
         <div className={styles.row_8}>
@@ -331,7 +355,9 @@ function App(props: any) {
             />
           </div>
         </div>
-        <span className={styles.downoad}># Downoad</span>
+        <span className={styles.downoad} id="Downoad">
+          # Downoad
+        </span>
         <div className={styles.row_14}>
           <span className={styles.caption_5}>PPT合集下载</span>
         </div>

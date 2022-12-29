@@ -12,15 +12,14 @@
   background-image: url(../public/images/img_96.png),
     url(../public/images/img_97.png),
     url(../public/images/img_98.png),
-    url(../public/images/img_99.png),
     url(../public/images/img_100.png),
     url(../public/images/img_101.png);
   background-size: 35.63rem 34.63rem, 42.75rem 42.88rem, 81.31rem 81.19rem,
-    25.25rem 25.25rem, 32.06rem 58.5rem, 100% 100%;
+     40.06rem 58.5rem, 100% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
     no-repeat;
   background-position: 26.44rem 133rem, 38.56rem 137.56rem, 0 121.19rem,
-    96.56rem 256rem, 91.63rem 246.38rem, 0 0;
+     100% 246.38rem, 0 0;
   background-origin: padding-box;
 }
 .header {
@@ -125,6 +124,7 @@
 .body {
   display: flex;
   align-self: center;
+  align-items: center;
   width: 118.88rem;
   padding: 0 0.75rem;
   margin-top: 15.69rem;
@@ -146,7 +146,6 @@
 }
 .select_future {
   align-self: center;
-  overflow: hidden;
   max-width: 100%;
   margin-top: 3.5rem;
   font-size: 5.56rem;
@@ -156,11 +155,10 @@
   letter-spacing: 0.83rem;
   white-space: nowrap;
   text-overflow: ellipsis;
-  lines: 1;
+  font-weight: 500;
 }
 .from_doris {
   align-self: center;
-  overflow: hidden;
   max-width: 120.13rem;
   margin: 1.63rem 0 0 2.44rem;
   font-size: 5.56rem;
@@ -170,7 +168,7 @@
   letter-spacing: 0.83rem;
   white-space: nowrap;
   text-overflow: ellipsis;
-  lines: 1;
+  font-weight: 500;
 }
 .submain {
   display: flex;
@@ -245,6 +243,7 @@
   letter-spacing: 0.2rem;
   white-space: nowrap;
   lines: 1;
+  font-weight: 500;
 }
 .row_1 {
   display: flex;
@@ -343,8 +342,6 @@
 }
 .agenda {
   align-self: center;
-  overflow: hidden;
-  width: 14.44rem;
   height: 2.88rem;
   margin: 7rem 90.94rem 0 0;
   font-size: 2.88rem;
@@ -357,6 +354,7 @@
   lines: 2;
   webkit-line-clamp: 2;
   webkit-box-orient: vertical;
+  font-weight: 500;
 }
 .main {
   display: flex;
@@ -503,18 +501,34 @@
   width: 105.13rem;
   height: 9.81rem;
   margin-top: 1.44rem;
+  position: relative;
+  z-index: 2;
 }
 .long_bg_item_2_1 {
   align-self: center;
   width: 105.13rem;
   height: 9.81rem;
   margin-top: 1.44rem;
+  position: relative;
+  z-index: 2;
+}
+.bg99 {
+  position: relative;
+}
+.long_bg_item_99 {
+  position: absolute;
+  left: 105rem;
+  width: 25rem;
+  top: -18rem;
+  z-index: 1;
 }
 .long_bg_item_3_1 {
   align-self: center;
   width: 105.13rem;
   height: 9.81rem;
   margin-top: 1.44rem;
+  position: relative;
+  z-index: 2;
 }
 .long_bg_item_4 {
   align-self: center;
@@ -725,7 +739,6 @@
 }
 .program_comittee {
   align-self: center;
-  overflow: hidden;
   width: 31.19rem;
   height: 3rem;
   margin: 7.25rem 74.06rem 0 0;
@@ -739,6 +752,7 @@
   lines: 2;
   webkit-line-clamp: 2;
   webkit-box-orient: vertical;
+  font-weight: 500;
 }
 .row_4_item_0 {
   display: flex;
@@ -853,6 +867,7 @@
   letter-spacing: 0.2rem;
   white-space: nowrap;
   lines: 1;
+  font-weight: 500;
 }
 .caption_3 {
   align-self: center;
@@ -1131,6 +1146,7 @@
   letter-spacing: 0.2rem;
   white-space: nowrap;
   lines: 1;
+  font-weight: 500;
 }
 .row_14 {
   display: flex;
